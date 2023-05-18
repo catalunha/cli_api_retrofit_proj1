@@ -20,10 +20,6 @@ class InfosCommand extends Command {
 
   InfosCommand() {
     try {
-      // final InfoRetrofitDataSource infoRetrofitDataSource =
-      //     InfoRetrofitDataSource(Dio());
-      // final Repository repository =
-      //     InfoRepository(infoRetrofitDataSource: infoRetrofitDataSource);
       final DataSource dataSource = InfoRetrofitDataSource(Dio());
       final Repository repository = InfoRepository(dataSource: dataSource);
 

@@ -2,14 +2,9 @@
 import 'package:cli_api_retrofit_proj1/repositories/repository.dart';
 
 import '../datasource/datasource.dart';
-import '../datasource/info_retrofit_datasource.dart';
 import '../models/info_model.dart';
 
 class InfoRepository extends Repository {
-  // final InfoRetrofitDataSource infoRetrofitDataSource;
-  // InfoRepository({
-  //   required this.infoRetrofitDataSource,
-  // });
   final DataSource dataSource;
   InfoRepository({
     required this.dataSource,
